@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quizzify</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="icon" type="image/jpg" href="./assets/logo.jpg">
+  </head>
+  <body>
+    <script src="./s.miniapp.js"></script>
+    <script type="text/javascript">
+      function playButtonAction() {
+        setNavigationBarLeftButton(SNavigationBackButtonType.back);
+        setNavigationBarTitle("Playing game");
+        window.location.href = "./game.html";
+      }
+      function highscoresButtonAction() {
+        setNavigationBarLeftButton(SNavigationBackButtonType.back);
+        setNavigationBarTitle("High Scores");
+        window.location.href = "./highscores.html";
+      }
+    </script>
+    <script type="text/javascript">
+      if(document.readyState === 'ready' || document.readyState === 'complete') {
+        setNavigationBarLeftButton(SNavigationBackButtonType.close);
+        setNavigationBarTitle("The Quizzify Game");
+      } else {
+          document.onreadystatechange = function () {
+              if (document.readyState == "complete") {
+                setNavigationBarLeftButton(SNavigationBackButtonType.close);
+                setNavigationBarTitle("The Quizzify Game");
+              }
+          }
+      }
+  </script>
+    <div class="container">
+      <div id="home" class="flex-center flex-column">
+        <h1 style="text-align: center">The Quizzify Game</h1>
+        <a class="btn" onClick="playButtonAction()">Play</a>
+        <a class="btn" onClick="highscoresButtonAction()">High Scores</a>
+      </div>
+    </div>
+  </body>
+</html>
