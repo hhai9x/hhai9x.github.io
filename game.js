@@ -14,12 +14,13 @@ let availableQuesions = [];
 let questions = [];
 
 fetch(
-    'https://opentdb.com/api.php?amount=20&category=22&difficulty=easy&type=multiple'
+    'https://opentdb.com/api.php?amount=5&category=22&difficulty=easy&type=multiple'
 )
     .then((res) => {
         return res.json();
     })
     .then((loadedQuestions) => {
+        console.log(loadedQuestions);
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,

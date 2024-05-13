@@ -12,23 +12,19 @@
     <script type="text/javascript">
       function playButtonAction() {
         setNavigationBarLeftButton(SNavigationBackButtonType.back);
-        setNavigationBarTitle("Playing game");
         window.location.href = "./game.html";
       }
       function highscoresButtonAction() {
         setNavigationBarLeftButton(SNavigationBackButtonType.back);
-        setNavigationBarTitle("High Scores");
         window.location.href = "./highscores.html";
       }
     </script>
     <script type="text/javascript">
       if(document.readyState === 'ready' || document.readyState === 'complete') {
-        setNavigationBarLeftButton(SNavigationBackButtonType.close);
         setNavigationBarTitle("The Quizzify Game");
       } else {
           document.onreadystatechange = function () {
               if (document.readyState == "complete") {
-                setNavigationBarLeftButton(SNavigationBackButtonType.close);
                 setNavigationBarTitle("The Quizzify Game");
               }
           }
