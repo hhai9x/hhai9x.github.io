@@ -1,182 +1,245 @@
-[
+{
+  "response_code": 0,
+  "results": [
     {
-        "question" : "The International Literacy Day is observed on ?",
-        "choice1" : "Sep 8",
-        "choice2" : "Nov 28",
-        "choice3" : "May 2",
-        "choice4" : "Sep 22",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Con vật nào dưới đây không thể bơi?",
+      "correct_answer": "Voi",
+      "incorrect_answers": [
+        "Cá",
+        "Chim cánh cụt",
+        "Vịt"
+      ]
     },
     {
-        "question" : "The language of Lakshadweep. a Union Territory of India, is ?",
-        "choice1" : "Hindi",
-        "choice2" : "Tamil",
-        "choice3" : "Telugu",
-        "choice4" : "Malayalam",
-        "answer" : 4
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Hình thoi có mấy cạnh?",
+      "correct_answer": "4",
+      "incorrect_answers": [
+        "3",
+        "5",
+        "6"
+      ]
     },
     {
-        "question" : "In which group of places the Kumbha Mela is held every twelve years ?",
-        "choice1" : "Ujjain. Purl; Prayag. Haridwar",
-        "choice2" : "Prayag. Haridwar, Ujjain,. Nasik",
-        "choice3" : "Rameshwaram. Purl, Badrinath. Dwarika",
-        "choice4" : "Chittakoot, Ujjain, Prayag,'Haridwar",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Hiệp khí đạo là tên khác của môn võ nào?",
+      "correct_answer": "Aikido",
+      "incorrect_answers": [
+        "Vovinam",
+        "Judo",
+        "Karate"
+      ]
     },
     {
-        "question" : "Bahubali festival is related to ?",
-        "choice1" : "Islam",
-        "choice2" : "Hinduism",
-        "choice3" : "Buddhism",
-        "choice4" : "Jainism",
-        "answer" : 4
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Lễ hội khai ấn Đền Trần diễn ra ở tỉnh nào?",
+      "correct_answer": "Nam Định",
+      "incorrect_answers": [
+        "Ninh Bình",
+        "Bắc Ninh",
+        "Thái Bình"
+      ]
     },
     {
-        "question" : "Which day is observed as the World Standards  Day ?",
-        "choice1" : "Jun 26",
-        "choice2" : "Oct 14",
-        "choice3" : "Nov 15",
-        "choice4" : "Dec 2",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Đất nước hình lục lăng là tên gọi khác của quốc gia nào?",
+      "correct_answer": "Pháp",
+      "incorrect_answers": [
+        "Ý",
+        "Anh",
+        "Đức"
+      ]
     },
     {
-        "question" : "Who is the current Prime Minister Of India ?",
-        "choice1" : "Shri.Naremdra Modi",
-        "choice2" : "Rahul Gandhi",
-        "choice3" : "Dr. Manmohan Singh",
-        "choice4" : "Jawahar Lal Nehru",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Thể loại thơ Haiku là của quốc gia nào?",
+      "correct_answer": "Nhật Bản",
+      "incorrect_answers": [
+        "Trung Quốc",
+        "Hàn Quốc",
+        "Ấn Độ"
+      ]
     },
     {
-        "question" : "Who is the current President Of India ?",
-        "choice1" : "Pranab Mukharjee",
-        "choice2" : "Narendra Modi",
-        "choice3" : "Druapadi Murmur",
-        "choice4" : "Rahul Gandhi",
-        "answer" : 3
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Tên loại búp bê gỗ nổi tiếng của Nga?",
+      "correct_answer": "Matryoshka",
+      "incorrect_answers": [
+        "Kirov",
+        "Perestroika",
+        "Daruma"
+      ]
     },
     {
-        "question" : " Where is Taj Mahal located ?",
-        "choice1" : "Agra",
-        "choice2" : "Delhi",
-        "choice3" : "Mumbai",
-        "choice4" : "Mathura",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Đàn cổ cầm có mấy dây?",
+      "correct_answer": "7 dây",
+      "incorrect_answers": [
+        "5 dây",
+        "6 dây",
+        "4 dây"
+      ]
     },
     {
-        "question" : "On Which Day Independence Day is Celebrated ?",
-        "choice1" : "14 Nov",
-        "choice2" : "15 Aug",
-        "choice3" : "26 jan",
-        "choice4" : "2 Oct",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Sông nào ngăn cách thời kỳ Đàng Trong và Đàng Ngoài?",
+      "correct_answer": "Sông Gianh",
+      "incorrect_answers": [
+        "Sông Tranh",
+        "Sông Gâm",
+        "Sông Đồng Nai"
+      ]
     },
     {
-        "question" : "Who was the First President of India ?",
-        "choice1" : "A.P.J Abdul Kalam",
-        "choice2" : "Dr. Rajendra Prasad",
-        "choice3" : "Sarvepalli Radhakrishnan",
-        "choice4" : "Zakir Hussain",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Tác phẩm nào của nhà văn Hemingway đã đoạt giải Nobel văn học năm 1954?",
+      "correct_answer": "Ông già và biển cả",
+      "incorrect_answers": [
+        "Giã từ vũ khí",
+        "Chuông nguyện hồn ai",
+        "Tuyết trên đỉnh kilimanjaro"
+      ]
     },
     {
-        "question" : "On Which Day Childrens Day is Celebrated ?",
-        "choice1" : "2 Oct",
-        "choice2" : "14 Nov",
-        "choice3" : "06 Jun",
-        "choice4" : "11 Mar",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Quá trình sinh tổng hợp protein diễn ra ở bộ phận nào trong tế bào?",
+      "correct_answer": "Ribosome",
+      "incorrect_answers": [
+        "Ti thể",
+        "Lưới nội chất",
+        "Bộ máy Golgi"
+      ]
     },
     {
-        "question" : "Who was the First Prime Minister Of India ?",
-        "choice1" : "Swami Vivekanda",
-        "choice2" : "Pandit Jawaharlal Nehru",
-        "choice3" : "Lal Bahadur Shastri",
-        "choice4" : "Indira Gandhi",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Tiền đạo Lê Công Vinh đã từng chơi cho đội bóng nào ở Bồ Đào Nha?",
+      "correct_answer": "Leixoes SC",
+      "incorrect_answers": [
+        "Rio Ave",
+        "Gil Vicente",
+        "Aves"
+      ]
     },
     {
-        "question" : "Who is the Chief Of Defence Staff ?",
-        "choice1" : "Lt General Anil Chauhan",
-        "choice2" : "General Manoj Pandey",
-        "choice3" : "General Manoj Mukund",
-        "choice4" : "General Bipin Rawat",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Hang Sơn Đoòng được ai khám phá ra lần đầu tiên?",
+      "correct_answer": "Hồ Khanh",
+      "incorrect_answers": [
+        "Hồ Phương",
+        "Hồ Phi",
+        "Hồ An"
+      ]
     },
     {
-        "question" : "Which one is a Union Territory of the following ?",
-        "choice1" : "Daman & Diu",
-        "choice2" : "New Delhi",
-        "choice3" : "Mumbai",
-        "choice4" : "Hyderabad",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Thao, Nho, Phương, Định là những nhân vật trong tác phẩm nào của nhà văn Lê Minh Khuê?",
+      "correct_answer": "Những ngôi sao xa xôi",
+      "incorrect_answers": [
+        "Mây giăng cuối phố",
+        "Đất bỏ hoang",
+        "Tiếng lòng"
+      ]
     },
     {
-        "question" : "Who is the Parent Company Of Google ?",
-        "choice1" : "Alphabet",
-        "choice2" : "Microsoft",
-        "choice3" : "Apple",
-        "choice4" : "Amazon",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Máy gia tốc hạt nào lớn nhất thế giới hiện nay?",
+      "correct_answer": "LHC",
+      "incorrect_answers": [
+        "Megatron",
+        "Cyclotron",
+        "Plasmatron"
+      ]
     },
     {
-        "question" : "Who is the Richest Person In the World ?",
-        "choice1" : "Bill Gates",
-        "choice2" : "Elon Musk",
-        "choice3" : "Bernard Arnault & Family",
-        "choice4" : "Jeff Bezos",
-        "answer" : 3
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Cúc họa mi có màu gì?",
+      "correct_answer": "Trắng",
+      "incorrect_answers": [
+        "Xanh",
+        "Đỏ",
+        "Vàng"
+      ]
     },
     {
-        "question" : " What is Full form of C.B.I ?",
-        "choice1" : "Central Bank Of India",
-        "choice2" : "Crime Branch Of India",
-        "choice3" : "Central Bureau Of Investigation",
-        "choice4" : "Corporate Bussiness Intelligence",
-        "answer" : 3
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Đâu là một bộ phận không thể thiếu trên ô tô?",
+      "correct_answer": "Vô lăng",
+      "incorrect_answers": [
+        "Chân vịt",
+        "Máy sấy tóc",
+        "Bàn là"
+      ]
     },
     {
-        "question" : " What is Full form of RBI ?",
-        "choice1" : "Reserve Bank of India",
-        "choice2" : "Royal Bank of India",
-        "choice3" : "Regional Bank of India",
-        "choice4" : "Reliance Bank of India",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Tổ hợp phím nào trên bàn phím máy tính dùng để copy?",
+      "correct_answer": "Ctrl + C",
+      "incorrect_answers": [
+        "Ctrl + X",
+        "Ctrl + S",
+        "Ctrl + V"
+      ]
     },
     {
-        "question" : " WWhich of the following is the highest mountain peak in India ?",
-        "choice1" : "Mount Everest",
-        "choice2" : "Kanchenjunga",
-        "choice3" : "Nanda Devi",
-        "choice4" : "Annapurna",
-        "answer" : 2
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Điểm nào cách đều tất cả các điểm trên 1 đường tròn?",
+      "correct_answer": "Tâm",
+      "incorrect_answers": [
+        "Trung điểm",
+        "Trực tâm",
+        "Phân giác"
+      ]
     },
     {
-        "question" : " Where is Mount Everest located ?",
-        "choice1" : "Nepal",
-        "choice2" : "India",
-        "choice3" : "China",
-        "choice4" : "Bhutan",
-        "answer" : 1
-
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Thương cảng đầu tiên trong lịch sử Việt Nam?",
+      "correct_answer": "Vân Đồn",
+      "incorrect_answers": [
+        "Cát Lái",
+        "Đà Nẵng",
+        "Hạ Long"
+      ]
     }
-]
+  ]
+}

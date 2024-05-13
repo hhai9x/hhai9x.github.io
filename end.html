@@ -8,6 +8,57 @@
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
+    <script src="./s.miniapp.js"></script>
+    <script type="text/javascript">
+      function homeAction() {
+        setNavigationBarLeftButton(SNavigationBackButtonType.close);
+        window.location.href = "./index.html";
+      }
+      function loginBySignet() {
+        getUserId();
+      }
+      function handleLoginResponse(dictionaryData) {
+        let usernameInput = document.getElementById("username")
+        var returnCode = dictionaryData.returnCode;
+        if (returnCode == 200) {
+          usernameInput.value = dictionaryData.data;
+          document.getElementById('saveScoreBtn').disabled = false;
+        } else {
+          showToast("Không lấy được SignetID");
+        }
+      }
+      function closeAppAction() {
+        closeApp();
+      }
+      function shareAction() {
+        forwardMessage("Ứng dụng Mini app Đố vui: signet://miniApp.quiz\n\nKết quả thi: " + mostRecentScore + "/50 điểm");
+      }
+    </script>
+    <script type="text/javascript">
+      if(document.readyState === 'ready' || document.readyState === 'complete') {
+        handlePageLoaded();
+      } else {
+        document.onreadystatechange = function () {
+          if (document.readyState == "complete") {
+            handlePageLoaded();
+          }
+        }
+      }
+      function handlePageLoaded() {
+        handlePageDisplay(true);
+        document.addEventListener('visibilitychange', function() {
+          handlePageDisplay(!document.hidden);
+        });
+      }
+      function handlePageDisplay(isDisplay) {
+        if(isDisplay) {
+          setNavigationBarTitle("Kết thúc");
+          setNavigationBarColor("#0044aa");
+          setNavigationBarLeftButton(SNavigationBackButtonType.home);
+        }
+      }
+    </script>
+    
     <div class="container">
       <div id="end" class="flex-center flex-column">
         <h1 id="finalScore"></h1>
@@ -21,15 +72,23 @@
           <button
             type="submit"
             class="btn"
+            id="getUserIdBtn"
+            onclick="loginBySignet()"
+          >
+            Dùng SignetID
+          </button>
+          <button
+            type="submit"
+            class="btn"
             id="saveScoreBtn"
             onclick="saveHighScore(event)"
             disabled
           >
-            Save
+            Lưu
           </button>
         </form>
-        <a class="btn" href="./game.html">Play Again</a>
-        <a class="btn" href="./">Go Home</a>
+        <button type="submit" class="btn" id="shareBtn" onclick="shareAction()">Chia sẻ</button>
+        <button type="submit" class="btn" id="closeAppBtn" onclick="closeAppAction()">Đóng</button>
       </div>
     </div>
     <script src="./end.js"></script>

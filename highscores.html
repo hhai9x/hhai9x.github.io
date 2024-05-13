@@ -9,11 +9,40 @@
     <link rel="stylesheet" href="./highscores.css" />
   </head>
   <body>
+    <script src="./s.miniapp.js"></script>
+    <script type="text/javascript">
+      function homeAction() {
+        setNavigationBarLeftButton(SNavigationBackButtonType.close);
+        window.location.href = "./index.html";
+      }
+      if(document.readyState === 'ready' || document.readyState === 'complete') {
+        handlePageLoaded();
+      } else {
+          document.onreadystatechange = function () {
+              if (document.readyState == "complete") {
+                handlePageLoaded();
+              }
+          }
+      }
+      function handlePageLoaded() {
+        handlePageDisplay(true);
+        document.addEventListener('visibilitychange', function() {
+          handlePageDisplay(!document.hidden);
+        });
+      }
+      function handlePageDisplay(isDisplay) {
+        if(isDisplay) {
+          setNavigationBarTitle("Bảng xếp hạng");
+          setNavigationBarColor("#d68400");
+          setNavigationBarLeftButton(SNavigationBackButtonType.back);
+        }
+      }
+    </script>
     <div class="container">
       <div id="highScores" class="flex-center flex-column">
-        <h1 id="finalScore">High Scores</h1>
+        <h1 id="finalScore">Bảng xếp hạng</h1>
         <ul id="highScoresList"></ul>
-        <a class="btn" href="./index.html">Go Home</a>
+        <a class="btn" onClick="homeAction()">Về trang chủ</a>
       </div>
     </div>
     <script src="./highscores.js"></script>

@@ -11,8 +11,10 @@ const SMessageName = {
     forwardMessage: "forwardMessage"
 };
 const SNavigationBackButtonType = {
+	hidden: "hidden",
 	close: "close",
-	back: "back"
+	back: "back",
+    home: "home"
 };
 
 function sendMessageToNativeApp(messageData) {

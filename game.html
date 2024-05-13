@@ -15,7 +15,7 @@
         <div id="hud">
           <div id="hud-item">
             <p id="progressText" class="hud-prefix">
-              Question
+              Câu hỏi
             </p>
             <div id="progressBar">
               <div id="progressBarFull"></div>
@@ -23,7 +23,7 @@
           </div>
           <div id="hud-item">
             <p class="hud-prefix">
-              Score
+              Điểm số
             </p>
             <h1 class="hud-main-text" id="score">
               0
@@ -50,5 +50,30 @@
       </div>
     </div>
     <script src="./game.js"></script>
+    <script src="./s.miniapp.js"></script>
+    <script type="text/javascript">
+      if(document.readyState === 'ready' || document.readyState === 'complete') {
+        handlePageLoaded();
+      } else {
+          document.onreadystatechange = function () {
+              if (document.readyState == "complete") {
+                handlePageLoaded();
+              }
+          }
+      }
+      function handlePageLoaded() {
+        handlePageDisplay(true);
+        document.addEventListener('visibilitychange', function() {
+          handlePageDisplay(!document.hidden);
+        });
+      }
+      function handlePageDisplay(isDisplay) {
+        if(isDisplay) {
+          setNavigationBarTitle("Đang làm bài");
+          setNavigationBarColor("#bc0000");
+          setNavigationBarLeftButton(SNavigationBackButtonType.back);
+        }
+      }
+    </script>
   </body>
 </html>

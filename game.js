@@ -13,14 +13,15 @@ let availableQuesions = [];
 
 let questions = [];
 
-fetch(
-    'https://opentdb.com/api.php?amount=5&category=22&difficulty=easy&type=multiple'
-)
+// fetch(
+//     'https://opentdb.com/api.php?amount=5&category=22&difficulty=easy&type=multiple'
+// )
+
+fetch("./questions.min.json")
     .then((res) => {
         return res.json();
     })
     .then((loadedQuestions) => {
-        console.log(loadedQuestions);
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
@@ -49,7 +50,7 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 20;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
     questionCounter = 0;
@@ -67,7 +68,7 @@ getNewQuestion = () => {
         return window.location.assign('./end.html');
     }
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Câu hỏi số ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 

@@ -11,30 +11,41 @@
     <script src="./s.miniapp.js"></script>
     <script type="text/javascript">
       function playButtonAction() {
-        setNavigationBarLeftButton(SNavigationBackButtonType.back);
         window.location.href = "./game.html";
       }
       function highscoresButtonAction() {
-        setNavigationBarLeftButton(SNavigationBackButtonType.back);
         window.location.href = "./highscores.html";
       }
     </script>
     <script type="text/javascript">
       if(document.readyState === 'ready' || document.readyState === 'complete') {
-        setNavigationBarTitle("The Quizzify Game");
+        handlePageLoaded();
       } else {
           document.onreadystatechange = function () {
               if (document.readyState == "complete") {
-                setNavigationBarTitle("The Quizzify Game");
+                handlePageLoaded();
               }
           }
       }
-  </script>
+      function handlePageLoaded() {
+        handlePageDisplay(true);
+        document.addEventListener('visibilitychange', function() {
+          handlePageDisplay(!document.hidden);
+        });
+      }
+      function handlePageDisplay(isDisplay) {
+        if(isDisplay) {
+          setNavigationBarTitle("Đố vui");
+          setNavigationBarColor("#1A8457");
+          setNavigationBarLeftButton(SNavigationBackButtonType.hidden);
+        }
+      }
+    </script>
     <div class="container">
       <div id="home" class="flex-center flex-column">
-        <h1 style="text-align: center">The Quizzify Game</h1>
-        <a class="btn" onClick="playButtonAction()">Play</a>
-        <a class="btn" onClick="highscoresButtonAction()">High Scores</a>
+        <h1 style="text-align: center">Đố vui</h1>
+        <a class="btn" onClick="playButtonAction()">Bắt đầu</a>
+        <a class="btn" onClick="highscoresButtonAction()">Bảng xếp hạng</a>
       </div>
     </div>
   </body>
